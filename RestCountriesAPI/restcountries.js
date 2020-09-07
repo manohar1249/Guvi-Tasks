@@ -27,7 +27,7 @@ return obj;})
 		var e = document.querySelector('#country')
 		var val = e.options[e.selectedIndex].text;
 		console.log(val);
-		for(let i=0;i<30;i++)
+		for(let i=0;i<details.length;i++)
 		{
 			if(val===details[i]["name"])
 			{
@@ -43,7 +43,7 @@ return obj;})
 function insert(details)
 {
 	var select = document.querySelector('#country');
-	for(let i=1;i<30;i++)
+	for(let i=0;i<details.length;i++)
 	{	
 		var option = document.createElement("option")
 		option.text = details[i]["name"];
