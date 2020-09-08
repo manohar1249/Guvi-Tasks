@@ -6,7 +6,7 @@ var country = document.getElementById('country').value
 
 
 var request = new XMLHttpRequest()
-var url = "http://api.openweathermap.org/data/2.5/weather?q="+city+","+country+"&APPID=a9cfdb29a716e26d71aebb273da499d6"
+var url = "https://api.openweathermap.org/data/2.5/weather?q="+city+","+country+"&APPID=a9cfdb29a716e26d71aebb273da499d6"
 request.open('GET',url,true)
 request.send()
 
