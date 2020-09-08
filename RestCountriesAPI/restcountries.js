@@ -7,6 +7,7 @@ request.send()
 var details;
 
 request.onload = function(){
+	if(request.readyState == 4 && request.status == 200){
 	var countries = JSON.parse(this.response)	
 	details = countries.map((val)=>{
 	var obj = {"name":val.name,
@@ -38,6 +39,14 @@ return obj;})
 		}
 }
 }
+else
+	alert("Status: "+request.status+" Message: "+request.statusText);
+}
+
+request.onerror = function(){
+	console.log("connection failed")
+	alert("Connection failed");
+}
 
 
 function insert(details)
@@ -51,9 +60,3 @@ function insert(details)
 		select.add(option);
 	}
 }
-
-
-
-
-
-
