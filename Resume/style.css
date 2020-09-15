@@ -1,88 +1,62 @@
 .boundary {
-    left: 10%;
-    right: 10%;
+    position: relative;
+    margin: auto;
     width: 80%;
-}
-
-.banner {
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    width: 80%;
-    height: 45%;
-    background-color: gray;
-    /* background-image: linear-gradient(45deg, #c0392b, #8e44ad) */
 }
 
 img {
-    position: absolute;
+    display: block;
+    margin: 0 auto;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    right: 35%;
-    left: 40%;
-    top: 20px;
+    width: 20%;
     border: 2px solid yellowgreen;
+    margin-top: 1%;
+}
+
+.banner {
+    height: 45%;
+    background-image: linear-gradient(45deg, #c0392b, #8e44ad);
+    /* border: 2px solid skyblue; */
 }
 
 .name {
-    position: absolute;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
-    padding: 5px 10px 10px 10px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 1px;
     text-align: center;
-    width: 350px;
-    height: 50px;
+    width: 25%;
+    height: 25%;
     background-color: yellowgreen;
     color: white;
-    left: 33%;
-    bottom: 10%;
-}
-
-.stripe {
-    position: absolute;
-    background-color: gainsboro;
-    width: 100%;
-    bottom: 15%;
-    height: 10%;
+    margin-bottom: 1%;
+    font-weight: bold;
 }
 
 .contact {
-    position: absolute;
-    font-size: 20px;
+    text-align: center;
+    font-size: large;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    left: 13%;
-    top: 42%;
-    padding-top: 20px;
-}
-
-.line {
-    position: absolute;
-    top: 52%;
-    height: 0%;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }
 
 .details {
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    width: 80%;
-    height: 45%;
-    top: 55%;
-    height: auto;
     column-count: 2;
     column-rule: 2px solid gainsboro;
 }
 
-.date {
-    text-align: right;
-    color: gainsboro;
-    display: inline;
+.skills {
+    list-style-type: none;
 }
 
-.progressbar {
+progress {
     position: absolute;
-    left: 200px;
-    /* border: 1px solid black; */
+    width: 20%;
+    left: 20%;
+}
+
+h4 {
+    position: relative;
+    left: 3%;
 }
